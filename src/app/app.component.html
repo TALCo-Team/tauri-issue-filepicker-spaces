@@ -1,0 +1,18 @@
+<div class="container" >
+  <h1>Error example</h1>
+  <p>Execution of program "test folder/program" (path with spaces)</p>
+  <div class="row">
+    <form (submit)="runProgramError($event)">
+      <button type="submit">Execute program</button>
+    </form>
+  </div>
+  <pre [innerText]="programOutput" style="border: 2px red solid; min-height: 30px;"></pre>
+  <p>Execution of program "test_folder/program" (path without spaces)</p>
+  <div class="row">
+    <form (submit)="runProgramCorrect($event)">
+      <button type="submit">Execute program</button>
+    </form>
+  </div>
+  <pre [innerText]="correctOutput" style="border: 2px green solid; min-height: 30px;"></pre>
+
+</div>
